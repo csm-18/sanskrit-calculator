@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sanskrit-Calculator-App ( संख्यागणकः )</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link id="calc-css" rel="stylesheet" href="styles/calc.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 title="Calculator ( Sanskrit-Calculator )">संख्यागणकः</h1>
+      <div class="down-header">
+        <button
+          title="Home"
+          class="home"
+          onclick="window.location.href = '/index.html'; "
+        >
+          <img class="home-icon" src="icons/home-icon.png" alt="Home" />
+        </button>
+        <button
+          title="About"
+          class="about"
+          onclick="window.location.href = '/about_page.html' "
+        >
+          बोधनं
+        </button>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="display">
+        <!-- here keep in mind that the pointer-events is set to none because of safety reasons
+        do not reset or change it! -->
+        <input id="input" type="text" style="pointer-events: none" />
+
+        <button class="clear-btn" onclick="clear_it_up()" title="Clear">
+          निरवशेष
+        </button>
+      </div>
+      <div class="result-div"><p id="result" title="Result">परिणामः</p></div>
+      <div class="calc-grid">
+        <div class="b1">
+          <button class="normal-btn" title="1" onclick="num(1)">१</button>
+        </div>
+        <div class="b2">
+          <button class="normal-btn" title="2" onclick="num(2)">२</button>
+        </div>
+        <div class="b3">
+          <button class="normal-btn" title="3" onclick="num(3)">३</button>
+        </div>
+        <div class="b4">
+          <button class="normal-btn" title="4" onclick="num(4)">४</button>
+        </div>
+        <div class="b5">
+          <button class="normal-btn" title="5" onclick="num(5)">५</button>
+        </div>
+        <div class="b6">
+          <button class="normal-btn" title="6" onclick="num(6)">६</button>
+        </div>
+        <div class="b7">
+          <button class="normal-btn" title="7" onclick="num(7)">७</button>
+        </div>
+        <div class="b8">
+          <button class="normal-btn" title="8" onclick="num(8)">८</button>
+        </div>
+        <div class="b9">
+          <button class="normal-btn" title="9" onclick="num(9)">९</button>
+        </div>
+        <div class="b0">
+          <button class="normal-btn" title="0" onclick="num(0)">०</button>
+        </div>
+        <div class="b-dot">
+          <button class="normal-btn" title="." onclick="num('.')">.</button>
+        </div>
+        <div class="b-mod">
+          <button class="normal-btn" title="modulus" onclick="num('%')">
+            %
+          </button>
+        </div>
+        <div class="b-d">
+          <button class="normal-btn" title="/" onclick="num('/')">/</button>
+        </div>
+        <div class="b-m">
+          <button class="normal-btn" title="*" onclick="num('*')">*</button>
+        </div>
+        <div class="b-mi">
+          <button class="normal-btn" title="-" onclick="num('-')">-</button>
+        </div>
+        <div class="b-p">
+          <button class="normal-btn" title="+" onclick="num('+')">+</button>
+        </div>
+        <div class="b-backspace">
+          <button
+            class="special-btn"
+            id="backspace"
+            title="Backspace"
+            onclick="backspace()"
+          >
+            <canvas id="backspace-canvas" width="15" height="40"></canvas>
+          </button>
+        </div>
+        <div class="b-e">
+          <button class="special-btn" title="equals" onclick="equals()">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

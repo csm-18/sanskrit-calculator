@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+}
+
+.header {
+    background-color: rgb(2, 2, 164);
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+.down-header {
+    padding-left: 5px;
+    background-color: rgb(11, 11, 134);
+    height: 20px;
+}
+
+.home {
+    background-color: rgb(13, 13, 204);
+    
+    border-radius: 50px;
+    
+}
+.home-icon {
+    
+    background-color: rgb(255, 255, 255);
+    height: 12px;
+    width: 15px;
+}
+.about {
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 13, 204);
+}

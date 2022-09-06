@@ -1,0 +1,175 @@
+.display {
+    padding-left: 30px;
+    padding-top: 130px;
+   align-items: center;
+   background-color: rgb(255, 255, 255);
+   
+    
+}
+input {
+    padding: 0px;
+    
+    font-size: 50px;
+    width: 300px;
+    background-color: rgba(3, 130, 221, 0.693);
+    color: rgb(226, 233, 239);
+}
+
+
+
+ .normal-btn {
+    height: 80px;
+    width: 65px;
+    background-color: rgb(60, 84, 202);
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+    
+ }
+ .special-btn {
+    height: 160px;
+    width: 70px;
+    background-color: rgb(60, 84, 202);
+    color: rgb(255, 255, 255);
+    border-width: 1px;
+ }
+ #backspace {
+    font-size: 12px;
+ }
+ .result-div {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    gap: 2px;
+ }
+ #result {
+    background-color: rgb(7, 194, 246);
+    padding-left: 5px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 20px;
+    
+    grid-column: 10;
+    border-width: 4px;
+    
+
+ }
+ .clear-btn {
+    padding-top: 0px;
+    padding-bottom:0px;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    width: 75px;
+    background-color: rgb(239, 27, 31);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+ }
+ 
+.calc-grid {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 350px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows:auto auto auto auto;
+    
+    padding-left: 2px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.calc-grid > div {
+    background-color: rgb(0, 183, 255);
+    
+    width: 70px;
+    
+    
+}
+
+.b-e {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.b7 {
+    grid-column: 1;
+    grid-row: 1;
+} 
+.b8 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.b9 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.b-d {
+    grid-column: 8;
+    grid-row: 1;
+}
+.b-backspace {
+    
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+.b4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.b5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.b6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+.b-m {
+    grid-column: 8;
+    grid-row: 2;
+}
+.b1 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.b2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.b3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+.b-mi {
+    grid-column: 8;
+    grid-row: 4;
+}
+.b-p {
+    grid-column: 8;
+    grid-row: 3;
+}
+.b0 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.b-dot {
+    grid-column: 2;
+    grid-row: 4;
+}
+.b-mod {
+    grid-column: 3;
+    grid-row: 4;
+}
+#backspace-canvas {
+    height: 35px;
+    width: 40px;
+    background-color: rgb(60, 84, 202);
+}
