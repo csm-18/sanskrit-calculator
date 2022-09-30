@@ -23,6 +23,7 @@ input {
     background-color: rgb(60, 84, 202);
     color: rgb(255, 255, 255);
     border-width: 1px;
+    font-size: 40px;
     
  }
  .special-btn {
@@ -31,6 +32,7 @@ input {
     background-color: rgb(60, 84, 202);
     color: rgb(255, 255, 255);
     border-width: 1px;
+    font-size: 40px; 
  }
  #backspace {
     font-size: 12px;
