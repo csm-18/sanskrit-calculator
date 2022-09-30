@@ -52,7 +52,7 @@ input {
     padding-left: 5px;
     padding-right: 15px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     
     grid-column: 10;
     border-width: 4px;
@@ -63,9 +63,9 @@ input {
     padding-top: 0px;
     padding-bottom:0px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     height: 40px;
-    width: 75px;
+    width: 90px;
     background-color: rgb(239, 27, 31);
     color: rgb(255, 255, 255);
     border-radius: 30px;
